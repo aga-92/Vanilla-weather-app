@@ -17,3 +17,19 @@ li {
   list-style: none;
   font-size: 15px;
 }
+.weather-temperature img {
+  height: 70px;
+  width: 70px;
+  margin-right: 5px;
+}
+strong {
+  font-size: 30px;
+}
+.units {
+  font-size: 15px;
+  position: relative;
+  bottom: 10px;
+}
+a {
+  text-decoration: none;
+}
