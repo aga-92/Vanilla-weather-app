@@ -16,6 +16,8 @@ ul {
 li {
   list-style: none;
   font-size: 15px;
+}
+li:first-letter {
   text-transform: capitalize;
 }
 .weather-temperature img {
