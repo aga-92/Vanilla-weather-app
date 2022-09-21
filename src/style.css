@@ -43,3 +43,17 @@ a {
 .weather-temperature .active:hover {
   text-decoration: none;
 }
+.weather-forecast {
+  text-align: center;
+  margin-top: 25px;
+}
+.weather-forecast-day {
+  font-size: 15px;
+}
+.weather-forecast-temp-max {
+  font-size: 13px;
+}
+.weather-forecast-temp-min {
+  font-size: 12px;
+  opacity: 0.7;
+}
