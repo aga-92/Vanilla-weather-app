@@ -16,59 +16,63 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <form id="search-form" class="mb-3">
-          <div class="row">
-            <div class="col-8">
-              <input
-                type="search"
-                placeholder="Type a city..."
-                id="search-input"
-                class="form-control"
-                autocomplete="off"
-              />
-            </div>
-            <div class="col-4">
-              <input type="submit" value="Search" class="btn btn-primary" />
-            </div>
-          </div>
-        </form>
-        <h1 id="city"></h1>
-        <ul>
-          <li id="date"></li>
-          <li id="description"></li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <div class="d-flex weather-temperature">
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="Mostly sunny"
-                id="icon"
-              />
-              <div>
-                <strong id="current-temperature"></strong
-                ><span class="units">
-                  <a href="#" id="celsius-link" class="active">°C </a> |
-                  <a href="#" id="fahrenheit-link">°F</a></span
-                >
+      <div class="weather-app-wraper">
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-8">
+                <input
+                  type="search"
+                  placeholder="Type a city..."
+                  id="search-input"
+                  class="form-control"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-4">
+                <input type="submit" value="Search" class="btn btn-primary" />
               </div>
             </div>
+          </form>
+          <h1 id="city"></h1>
+          <ul>
+            <li id="date"></li>
+            <li id="description"></li>
+          </ul>
+          <div class="row">
+            <div class="col-6">
+              <div class="d-flex weather-temperature">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt="Mostly sunny"
+                  id="icon"
+                />
+                <div>
+                  <strong id="current-temperature"></strong
+                  ><span class="units">
+                    <a href="#" id="celsius-link" class="active">°C </a> |
+                    <a href="#" id="fahrenheit-link">°F</a></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+              </ul>
+            </div>
+            <div class="weather-forecast" id="forecast"></div>
           </div>
-          <div class="col-6">
-            <ul>
-              <li>Humidity: <span id="humidity"></span>%</li>
-              <li>Wind: <span id="wind"></span> km/h</li>
-            </ul>
-          </div>
-          <div class="weather-forecast" id="forecast"></div>
         </div>
+        <small>
+          <a
+            href="https://github.com/aga-92/Vanilla-weather-app"
+            target="_blank"
+            >Open-source code</a
+          >
+        </small>
       </div>
-      <small>
-        <a href="https://github.com/aga-92/Vanilla-weather-app" target="_blank"
-          >Open-source code</a
-        >
-      </small>
     </div>
     <script src="src/script.js"></script>
   </body>

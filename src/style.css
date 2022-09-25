@@ -1,25 +1,22 @@
 .weather-app {
   text-align: center;
   border-radius: 10px;
-  max-width: 600px;
-  margin-top: 20px;
+
   padding: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  color: rgba(10, 68, 93, 0.759);
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgb(239, 246, 249) 0%,
-    rgb(206, 239, 253) 90%
-  );
-  box-shadow: 0 0 15px 0 rgb(206, 239, 253);
+  color: #1b3042;
+  background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
+  box-shadow: 0 0 15px 0 #b8dcff;
+}
+.weather-app-wraper {
+  max-width: 600px;
+  margin: 20px auto;
 }
 h1 {
   font-size: 45px;
   font-weight: 500;
   margin-top: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 0 15px 0 rgba(128, 150, 159, 0.152);
-  border-radius: 10px;
 }
 ul {
   margin: 0;
@@ -62,9 +59,11 @@ a {
 }
 .weather-forecast {
   text-align: center;
-  box-shadow: 0 0 15px 0 rgba(128, 150, 159, 0.152);
+  box-shadow: 0 0 15px 0 #6bbbff;
   border-radius: 10px;
   margin-top: 30px;
+  background-color: #b8dcffc6;
+  padding: 5px;
 }
 .weather-forecast-day {
   font-size: 15px;
@@ -77,10 +76,13 @@ a {
   opacity: 0.7;
 }
 .btn-primary {
-  background-color: #ec6f4cd7;
+  background-color: #ea603a;
   border: none;
   box-shadow: 0 0 15 0 #ea603a;
 }
 .btn-primary:hover {
-  background: #ea603a !important;
+  background: #e73f10 !important;
+}
+#weather-factors {
+  padding: 20px;
 }
