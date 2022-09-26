@@ -5,8 +5,8 @@
   padding: 20px;
   font-family: Arial, Helvetica, sans-serif;
   color: #1b3042;
-  background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
-  box-shadow: 0 0 15px 0 #b8dcff;
+  background-image: url("sky.jpg");
+  box-shadow: 0 0 15px 0 #b9c6d6;
 }
 .weather-app-wraper {
   max-width: 600px;
@@ -29,6 +29,9 @@ li {
 }
 li:first-letter {
   text-transform: capitalize;
+}
+.weather-factors {
+  margin-top: 20px;
 }
 #description {
   margin-bottom: 20px;
@@ -59,10 +62,10 @@ a {
 }
 .weather-forecast {
   text-align: center;
-  box-shadow: 0 0 15px 0 #6bbbff;
+  box-shadow: 0 0 15px 0 #b9c6d6;
   border-radius: 10px;
   margin-top: 30px;
-  background-color: #b8dcffc6;
+  background-color: #b9c6d6d8;
   padding: 5px;
 }
 .weather-forecast-day {
@@ -82,7 +85,4 @@ a {
 }
 .btn-primary:hover {
   background: #e73f10 !important;
-}
-#weather-factors {
-  padding: 20px;
 }
